@@ -6,11 +6,19 @@ if display_instructions == "yes":
     print("You selected 'yes'")
     print("Program continues")
 
+elif display_instructions == "y":
+    print("You selected 'yes'")
+    print("Program continues")
+
 # If they say 'no', output 'display instructions'
 elif display_instructions == "no":
     print("You selected 'no'")
     print("Display instructions")
 
+elif display_instructions == "n":
+    print("You selected 'no'")
+
+    print("Display instructions")
 # If they don't respond with either yes or no
 
 else:
