@@ -19,7 +19,7 @@ while display_instructions.lower() != "xxx":
         print("Program ends")
         break
 
-    # If they don't respond with either yes or no
+    # If they don't respond with either yes or no, print error msg
 
     else:
         print("Please answer 'yes' or 'no'")
