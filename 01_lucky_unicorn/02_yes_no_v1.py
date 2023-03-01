@@ -2,20 +2,24 @@
 def yes_no(question):
     valid = False
     while not valid:
-            response = input("Have you played before? ").lower()
+        response = input(question).lower()
 
-            # Main goes here...
-            # If they say 'yes', output 'program continues'
-            if response == "yes" or response == "y":
-                    response = "yes"
-                    print("Program continues")
+        # If they say 'yes', output 'program continues'
+        if response == "yes" or response == "y":
+            response = "yes"
+            return response
 
-            # If they say 'no', output 'display instructions'
-            elif response == "no" or response == "n":
-                    response = "no"
-                    print("Display instructions")
+        # If they say 'no', output 'display instructions'
+        elif response == "no" or response == "n":
+            response = "no"
+            return response
 
-            # If they don't respond with either yes or no, print error msg
+        else:
+            print("Please answer 'yes' or 'no'")
 
-            else:
-                print("Please answer 'yes' or 'no'")
+# Main routine goes here...
+
+
+display_instructions = yes_no("Have you played before? ")
+
+print("You chose {}".format(display_instructions))
