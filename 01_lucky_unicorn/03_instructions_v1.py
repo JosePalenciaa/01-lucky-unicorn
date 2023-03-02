@@ -17,19 +17,20 @@ def yes_no(question):
         else:
             print("Please answer 'yes' or 'no'")
 
+
 def instructions():
     print("**** How to Play ****")
     print()
     print("The rules of the game go here")
     print()
-    return""
+    return ""
 
 # Main routine goes here...
 
 
-display_instructions = yes_no("Have you played before? ")
+played_before = yes_no("Have you played before? ")
 
-if display_instructions == "yes":
+if played_before == "no":
     instructions()
-
+else:
     print("Program continues")
