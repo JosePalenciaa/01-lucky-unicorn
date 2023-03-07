@@ -1,8 +1,5 @@
-name = ""
-while name != "xxx":
-    name = input("Who are you? ")
-    print(name)
+import random
 
-print()
-print("We are done.")
-
+for item in range(0, 100):
+    number = random.randint(1, 4)
+    print(number, end='\t')
